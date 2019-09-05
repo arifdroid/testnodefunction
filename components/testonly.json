@@ -1,54 +1,266 @@
 [
     {
         "brand": "cosrx",
-        "priority": 0.5
+        "productname": "salicylic acid daily gentle cleanser"
+    },
+    {
+        "brand": "cetaphil",
+        "productname": "salicylic acid daily gentle cleanser"
+    },
+    {
+        "brand": "cetaphil",
+        "productname": "salicylic acid daily cleanser cetaphil"
     },
     {
         "brand": "cosrx",
-        "priority": 1
+        "productname": "salicylic acid daily gentle cleanser"
     },
     {
-        "brand": "cos.w",
-        "priority": 1
+        "brand": "cetaphil",
+        "productname": "salicylic acid daily gentle cleanser"
     },
     {
-        "brand": "cosmel",
-        "priority": 1
+        "brand": "cosrx",
+        "productname": "salicylic acid daily gentle cleanser"
     },
     {
-        "brand": "cosway",
-        "priority": 1
+        "brand": "cetaphil",
+        "productname": "salicylic acid daily gentle cleanser"
     },
     {
-        "brand": "cosmica",
-        "priority": 1
+        "brand": "cosrx",
+        "productname": "salicylic acid daily gentle cleanser"
     },
     {
-        "brand": "cosnori",
-        "priority": 1
+        "brand": "cetaphil",
+        "productname": "salicylic acid daily gentle cleanser"
     },
     {
-        "brand": "cosmedix",
-        "priority": 1
+        "brand": "cosrx",
+        "productname": "salicylic acid daily gentle cleanser"
     },
     {
-        "brand": "cosmetea",
-        "priority": 1
+        "brand": "cetaphil",
+        "productname": "salicylic acid daily gentle cleanser"
     },
     {
-        "brand": "cosmedica",
-        "priority": 1
+        "brand": "cosrx",
+        "productname": "salicylic acid daily gentle cleanser"
     },
     {
-        "brand": "cosmoderm",
-        "priority": 1
+        "brand": "cetaphil",
+        "productname": "salicylic acid daily gentle cleanser"
     },
     {
-        "brand": "cosnature",
-        "priority": 1
+        "brand": "cetaphil",
+        "productname": "salicylic acid daily cleanser cetaphil"
     },
     {
-        "brand": "cyberdermcellcosmet",
-        "priority": 1
+        "brand": "cosrx",
+        "productname": "salicylic acid daily gentle cleanser"
+    },
+    {
+        "brand": "cetaphil",
+        "productname": "salicylic acid daily gentle cleanser"
+    },
+    {
+        "brand": "cosrx",
+        "productname": "salicylic acid daily gentle cleanser"
+    },
+    {
+        "brand": "cetaphil",
+        "productname": "salicylic acid daily gentle cleanser"
+    },
+    {
+        "brand": "cosrx",
+        "productname": "salicylic acid daily gentle cleanser"
+    },
+    {
+        "brand": "cetaphil",
+        "productname": "salicylic acid daily gentle cleanser"
+    },
+    {
+        "brand": "cosrx",
+        "productname": "salicylic acid daily gentle cleanser"
+    },
+    {
+        "brand": "cetaphil",
+        "productname": "salicylic acid daily gentle cleanser"
+    },
+    {
+        "brand": "cosrx",
+        "productname": "salicylic acid daily gentle cleanser"
+    },
+    {
+        "brand": "cetaphil",
+        "productname": "salicylic acid daily gentle cleanser"
+    },
+    {
+        "brand": "cetaphil",
+        "productname": "salicylic acid daily cleanser cetaphil"
+    },
+    {
+        "brand": "cosrx",
+        "productname": "salicylic acid daily gentle cleanser"
+    },
+    {
+        "brand": "cetaphil",
+        "productname": "salicylic acid daily gentle cleanser"
+    },
+    {
+        "brand": "cosrx",
+        "productname": "salicylic acid daily gentle cleanser"
+    },
+    {
+        "brand": "cetaphil",
+        "productname": "salicylic acid daily gentle cleanser"
+    },
+    {
+        "brand": "cosrx",
+        "productname": "salicylic acid daily gentle cleanser"
+    },
+    {
+        "brand": "cetaphil",
+        "productname": "salicylic acid daily gentle cleanser"
+    },
+    {
+        "brand": "cosrx",
+        "productname": "salicylic acid daily gentle cleanser"
+    },
+    {
+        "brand": "cetaphil",
+        "productname": "salicylic acid daily gentle cleanser"
+    },
+    {
+        "brand": "cosrx",
+        "productname": "salicylic acid daily gentle cleanser"
+    },
+    {
+        "brand": "cetaphil",
+        "productname": "salicylic acid daily gentle cleanser"
+    },
+    {
+        "brand": "cetaphil",
+        "productname": "salicylic acid daily cleanser cetaphil"
+    },
+    {
+        "brand": "cosrx",
+        "productname": "salicylic acid daily gentle cleanser"
+    },
+    {
+        "brand": "cetaphil",
+        "productname": "salicylic acid daily gentle cleanser"
+    },
+    {
+        "brand": "cosrx",
+        "productname": "salicylic acid daily gentle cleanser"
+    },
+    {
+        "brand": "cetaphil",
+        "productname": "salicylic acid daily gentle cleanser"
+    },
+    {
+        "brand": "cosrx",
+        "productname": "salicylic acid daily gentle cleanser"
+    },
+    {
+        "brand": "cetaphil",
+        "productname": "salicylic acid daily gentle cleanser"
+    },
+    {
+        "brand": "cosrx",
+        "productname": "salicylic acid daily gentle cleanser"
+    },
+    {
+        "brand": "cetaphil",
+        "productname": "salicylic acid daily gentle cleanser"
+    },
+    {
+        "brand": "cosrx",
+        "productname": "salicylic acid daily gentle cleanser"
+    },
+    {
+        "brand": "cetaphil",
+        "productname": "salicylic acid daily gentle cleanser"
+    },
+    {
+        "brand": "cetaphil",
+        "productname": "salicylic acid daily cleanser cetaphil"
+    },
+    {
+        "brand": "cosrx",
+        "productname": "salicylic acid daily gentle cleanser"
+    },
+    {
+        "brand": "cetaphil",
+        "productname": "salicylic acid daily gentle cleanser"
+    },
+    {
+        "brand": "cosrx",
+        "productname": "salicylic acid daily gentle cleanser"
+    },
+    {
+        "brand": "cetaphil",
+        "productname": "salicylic acid daily gentle cleanser"
+    },
+    {
+        "brand": "cosrx",
+        "productname": "salicylic acid daily gentle cleanser"
+    },
+    {
+        "brand": "cetaphil",
+        "productname": "salicylic acid daily gentle cleanser"
+    },
+    {
+        "brand": "cosrx",
+        "productname": "salicylic acid daily gentle cleanser"
+    },
+    {
+        "brand": "cetaphil",
+        "productname": "salicylic acid daily gentle cleanser"
+    },
+    {
+        "brand": "cosrx",
+        "productname": "salicylic acid daily gentle cleanser"
+    },
+    {
+        "brand": "cetaphil",
+        "productname": "salicylic acid daily gentle cleanser"
+    },
+    {
+        "brand": "cetaphil",
+        "productname": "salicylic acid daily cleanser cetaphil"
+    },
+    {
+        "brand": "cosrx",
+        "productname": "salicylic acid daily gentle cleanser"
+    },
+    {
+        "brand": "cetaphil",
+        "productname": "salicylic acid daily gentle cleanser"
+    },
+    {
+        "brand": "cosrx",
+        "productname": "salicylic acid daily gentle cleanser"
+    },
+    {
+        "brand": "cetaphil",
+        "productname": "salicylic acid daily gentle cleanser"
+    },
+    {
+        "brand": "cosrx",
+        "productname": "salicylic acid daily gentle cleanser"
+    },
+    {
+        "brand": "cetaphil",
+        "productname": "salicylic acid daily gentle cleanser"
+    },
+    {
+        "brand": "cosrx",
+        "productname": "salicylic acid daily gentle cleanser"
+    },
+    {
+        "brand": "cetaphil",
+        "productname": "salicylic acid daily gentle cleanser"
     }
 ]

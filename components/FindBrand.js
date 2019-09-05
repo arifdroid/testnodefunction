@@ -82,7 +82,7 @@ class FindBrand { //for C only, that kind.
 
                         } else {
 
-                            var testbrandFound = objectBrand._allSingleWordsTogether(first_3);
+                            var testbrandFound = objectBrand._all_Dual_More_WordsTogether(first_3);
 
 
                             if (testbrandFound !== '') {//array here
