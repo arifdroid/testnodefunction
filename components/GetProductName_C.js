@@ -13,7 +13,7 @@ class GetProductName_C { //this only works_according to initial letter
             var j = 0;
             
             
-            console.log('\n\n >>>>>>>>>>>WOT NIGA\n\n')
+            //console.log('\n\n >>>>>>>>>>>WOT NIGA\n\n')
 
 
         } else {

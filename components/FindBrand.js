@@ -8,13 +8,13 @@ class FindBrand { //for C only, that kind.
 
 
     functionHereBrand() {
-        console.log('\n\n FIND BRAND')
+        //console.log('\n\n FIND BRAND')
     };
 
 
     _functionFindBrand_2wordsornot(brandParam) {
 
-        console.log('CHECK BRAND >> ', brandParam)
+        //console.log('CHECK BRAND >> ', brandParam)
 
         var brandFound = '';
 

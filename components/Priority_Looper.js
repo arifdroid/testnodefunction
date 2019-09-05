@@ -176,6 +176,61 @@ class Priority_Looper {
 
     }
 
+    _combineBrandAndProductName(brandJSON, productJSON){
+
+    var input_1 = brandJSON;
+
+    var input_2 = productJSON;
+        
+    var finalArray =[];
+
+    var stringbrandcheck = '';
+
+    input_1.forEach((el, i) => {
+
+        var pattern = el.brand;
+
+        var patternhere = new RegExp(pattern,'gi');
+
+        var foundmatch = stringbrandcheck.match(patternhere);
+
+        if(foundmatch===null){
+
+        input_2.forEach((element, j) => {
+
+
+            if(element.brand==el.brand){
+
+                 finalArray.push({"brand":element.brand , "productname": element.productName , "priority":element.priority+el.priority})   
+                 stringbrandcheck = stringbrandcheck+','+element.brand;
+            }
+
+        })
+
+        }
+
+    });
+
+    return finalArray;
+
+    }
+
+
+    _sortAscending(arrayFinal){
+
+
+        var sortedOut = arrayFinal.sort((a,b)=>{
+
+            if(a.priority>b.priority) return -1;
+            else if(b.priority> a.priority) return 1;
+            else return 0;
+        
+        });
+
+        return sortedOut;
+
+    }
+
 
 }
 

@@ -208,7 +208,7 @@ var deviceTextRecognition5 = [
         }
     },
     {
-        "elementText": "clinelle",
+        "elementText": "COSr",
         "lineText": "and excess sebum.",
         "resultText": "Saljeylic\nAcid\nDaily\nGentle\nCleanser\noSRX\nFormulated with botanical\ningredients and 0.5%\nSalicylic Acid, this cleanser\ngently whisk away impurities\nand excess sebum.\n150 ml/5.07 FL.OZ",
         "blockText": "Formulated with botanical\ningredients and 0.5%\nSalicylic Acid, this cleanser\ngently whisk away impurities\nand excess sebum.",
@@ -527,6 +527,14 @@ var priorityProduct = new PriorityLooper;
 var arrayPriorityProduct = priorityProduct._prioritizeProductName(productPriorityAll);
 
 console.log('\n\nFinal string list ', JSON.stringify(arrayPriorityProduct))
+
+
+var mergeBrandProduct = new PriorityLooper;
+
+var FINAL_BETA = mergeBrandProduct._combineBrandAndProductName(resultted, arrayPriorityProduct)
+
+
+console.log('\n\n FINAL BETA >>', JSON.stringify(FINAL_BETA))
 
 }else{ //resulted length is == 1
 
