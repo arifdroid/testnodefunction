@@ -263,4 +263,21 @@
         "brand": "cetaphil",
         "productname": "salicylic acid daily gentle cleanser"
     }
+],
+[
+    {
+        "brand": "cosrx",
+        "productName": "salicylic acid daily gentle cleanser",
+        "priority": 30
+    },
+    {
+        "brand": "cetaphil",
+        "productName": "salicylic acid daily gentle cleanser",
+        "priority": 30
+    },
+    {
+        "brand": "cetaphil",
+        "productName": "salicylic acid daily cleanser cetaphil",
+        "priority": 6
+    }
 ]

@@ -520,90 +520,13 @@ if(resultted.length>1){
     //productPriorityAll = productPriorityAll.shift();
     console.log('\n\n >>>>>>> HERE FINAL RESULT ARRAY : \n');
 
-    
-var calc= 0;
-
-var finalBrandList='';
-
-var finalBrandListWithPriority = [];
-
 console.log('\n\n\nPRODUCT PRIORITY ALL>>> ',JSON.stringify(productPriorityAll)+'\n\n\n')
 
-var iii=0;
+var priorityProduct = new PriorityLooper;
 
+var arrayPriorityProduct = priorityProduct._prioritizeProductName(productPriorityAll);
 
-productPriorityAll.forEach((element)=>{
-
-
-   iii++;
-    
-    var stringFinal = element.brand +' '+element.productname;
-
-    console.log('\n\n CRAZY >> ',iii, stringFinal);
-
-    if(!finalBrandList.match(stringFinal)){
-
-    var ii=0;
-
-    productPriority.forEach((elementInside)=>{
-        ii++;
-        var stringFinalInside = elementInside.brand +' '+ elementInside.productname;
-
-        if(stringFinal===stringFinalInside){
-            calc++;
-            console.log('count is > '+ stringFinal , calc);
-
-
-        }
-
-        if(productPriority.length===ii){
-
-            if(calc>0){
-
-                
-
-                //finalBrandList.concat(stringFinal.toString);
-
-                var finallll = stringFinal; // cosrx productname....... 
-                var splitbrand = finallll.split(" ");
-  
-                var brandNameHere = splitbrand[0];
-                console.log('apa jadi >> ', brandNameHere)
-                var productnameHere2 = splitbrand.splice(1,splitbrand.length);
-                var productnameHere = productnameHere2.join(" ");
-  //              var priorityList = finalBrandListWithPriority;
-
-                finalBrandListWithPriority=finalBrandListWithPriority.concat({"brand":brandNameHere,"productName":productnameHere,"priority":calc})
-
-                //finalBrandListWithPriority=finalBrandListWithPriority.push({"priority":calc,"productName":finallll}) .. not working
-
-                //finalBrandList = finalBrandList.concat(finallll);
-
-                if(finalBrandList===''){
-                
-                    finalBrandList =finallll
-                    
-                }else{
-
-                finalBrandList = finalBrandList +',' +finallll
-                
-             }    
-                //    console.log('finalbrandlist > ',finalBrandList);
-            }
-
-            calc=0;
-
-        }
-
-    })
-
-    }//check if match
-})
-
-console.log('\n\nFinal string list ', finalBrandList)
-
-console.log('\n\nFinal string list ', JSON.stringify(finalBrandListWithPriority))
-
+console.log('\n\nFinal string list ', JSON.stringify(arrayPriorityProduct))
 
 }else{ //resulted length is == 1
 
