@@ -1,0 +1,54 @@
+[
+    {
+        "brand": "cosrx",
+        "priority": 0.5
+    },
+    {
+        "brand": "cosrx",
+        "priority": 1
+    },
+    {
+        "brand": "cos.w",
+        "priority": 1
+    },
+    {
+        "brand": "cosmel",
+        "priority": 1
+    },
+    {
+        "brand": "cosway",
+        "priority": 1
+    },
+    {
+        "brand": "cosmica",
+        "priority": 1
+    },
+    {
+        "brand": "cosnori",
+        "priority": 1
+    },
+    {
+        "brand": "cosmedix",
+        "priority": 1
+    },
+    {
+        "brand": "cosmetea",
+        "priority": 1
+    },
+    {
+        "brand": "cosmedica",
+        "priority": 1
+    },
+    {
+        "brand": "cosmoderm",
+        "priority": 1
+    },
+    {
+        "brand": "cosnature",
+        "priority": 1
+    },
+    {
+        "brand": "cyberdermcellcosmet",
+        "priority": 1
+    }
+]
