@@ -111,9 +111,32 @@ class Priority_Looper {
             var stringFinal = element.brand + ' ' + element.productname; //make it into string. 
 
 
-            //console.log('\n\n CRAZY >> ', stringFinal);
+            var pattern = stringFinal;
 
-            if (!finalBrandList.match(stringFinal)) {  //if string dont find it, then continue iterate, else, stop, this already processed
+
+            while (pattern.includes("+")) {
+
+                pattern = pattern.replace("+", "*")
+
+
+            }
+            //console.log('pattern 1 ', pattern)
+
+            while (pattern.includes("*")) {
+
+                pattern = pattern.replace("*", "\\+")
+
+
+            }
+            //console.log('pattern 2 ', pattern)
+
+            var patternRegex = new RegExp(pattern, 'gi');
+
+
+
+
+
+            if (!finalBrandList.match(patternRegex)) {  //if string dont find it, then continue iterate, else, stop, this already processed
 
                 var ii = 0;
 
@@ -137,15 +160,15 @@ class Priority_Looper {
                             //finalBrandList.concat(stringFinal.toString);
 
                             var finallll = stringFinal; // cosrx productname....... 
-                            var splitbrand = finallll.split(" ");
+                            //var splitbrand = finallll.split(" "); //here is the moment of truth
 
-                            var brandNameHere = splitbrand[0];
-                            //console.log('apa jadi >> ', brandNameHere)
-                            var productnameHere2 = splitbrand.splice(1, splitbrand.length);
-                            var productnameHere = productnameHere2.join(" ");
-                            //              var priorityList = finalBrandListWithPriority;
+                            //var brandNameHere = splitbrand[0];
+                            // //console.log('apa jadi >> ', brandNameHere)
+                            // var productnameHere2 = splitbrand.splice(1, splitbrand.length);
+                            // var productnameHere = productnameHere2.join(" ");
+                            // //              var priorityList = finalBrandListWithPriority;
 
-                            finalBrandListWithPriority = finalBrandListWithPriority.concat({ "brand": brandNameHere, "productName": productnameHere, "priority": calc })
+                            finalBrandListWithPriority = finalBrandListWithPriority.concat({ "brand": element.brand, "productName": element.productname, "priority": calc })
 
                             //finalBrandListWithPriority=finalBrandListWithPriority.push({"priority":calc,"productName":finallll}) .. not working
 
@@ -176,55 +199,55 @@ class Priority_Looper {
 
     }
 
-    _combineBrandAndProductName(brandJSON, productJSON){
+    _combineBrandAndProductName(productJSON,brandJSON) {
 
-    var input_1 = brandJSON;
+        var input_1 = brandJSON;
 
-    var input_2 = productJSON;
-        
-    var finalArray =[];
+        var input_2 = productJSON;
 
-    var stringbrandcheck = '';
+        var finalArray = [];
 
-    input_1.forEach((el, i) => {
+        var stringbrandcheck = '';
 
-        var pattern = el.brand;
+        input_1.forEach((el, i) => {
 
-        var patternhere = new RegExp(pattern,'gi');
+            var pattern = el.brand;
 
-        var foundmatch = stringbrandcheck.match(patternhere);
+            var patternhere = new RegExp(pattern, 'gi');
 
-        if(foundmatch===null){
+            var foundmatch = stringbrandcheck.match(patternhere);
 
-        input_2.forEach((element, j) => {
+            if (foundmatch === null) {
+
+                input_2.forEach((element, j) => {
 
 
-            if(element.brand==el.brand){
+                    if (element.brand == el.brand) {
 
-                 finalArray.push({"brand":element.brand , "productname": element.productName , "priority":element.priority+el.priority})   
-                 stringbrandcheck = stringbrandcheck+','+element.brand;
+                        finalArray.push({ "brand": element.brand, "productname": element.productName, "priority": element.priority + el.priority })
+                        stringbrandcheck = stringbrandcheck + ',' + element.brand;
+                    }
+
+                })
+
             }
 
-        })
+        });
 
-        }
-
-    });
-
-    return finalArray;
+        return finalArray;
 
     }
 
 
-    _sortAscending(arrayFinal){
+    _sortAscending(arrayFinal) {
 
 
-        var sortedOut = arrayFinal.sort((a,b)=>{
+        var sortedOut = arrayFinal.sort((a, b) => {
 
-            if(a.priority>b.priority) return -1;
-            else if(b.priority> a.priority) return 1;
+            if (a.priority > b.priority) return -1;
+            else if (b.priority > a.priority) return 1;
             else return 0;
-        
+
         });
 
         return sortedOut;

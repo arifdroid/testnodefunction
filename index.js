@@ -8,6 +8,9 @@ const Result_Text_Process = require('./components/Result_text_process')
 
 const GetProductName_C = require('./components/GetProductName_C');
 
+const GetProductName_T = require('./components/GetProductName_T');
+
+
 var deviceTextRecognition3 = [
     {
         "elementText": "coSRX dual",
@@ -308,10 +311,115 @@ var deviceTextRecognition_theOrdinary = [
     }
 ];
 
+
+
+var deviceTextRecognition_theOrdinary_2 = [
+    {
+        "elementText": "The",
+        "lineText": "The",
+        "resultText": "The\nOrdinary.\nANTIOXIDANTS\nResveratrol 3%\nFerulic Acid 3%\nWater- ree\nPotens\nAntioxidant rormula\n1 floz\n30mb e",
+        "blockText": "The",
+        "blockCoordinates": {
+            "height": 154,
+            "width": 386,
+            "left": 643,
+            "top": 3
+        }
+    },
+    {
+        "elementText": "Ordinary.",
+        "lineText": "Ordinary.",
+        "resultText": "The\nOrdinary.\nANTIOXIDANTS\nResveratrol 3%\nFerulic Acid 3%\nWater- ree\nPotens\nAntioxidant rormula\n1 floz\n30mb e",
+        "blockText": "Ordinary.",
+        "blockCoordinates": {
+            "height": 365,
+            "width": 1388,
+            "left": 710,
+            "top": 149
+        }
+    },
+    {
+        "elementText": "ANTIOXIDANTS",
+        "lineText": "ANTIOXIDANTS",
+        "resultText": "The\nOrdinary.\nANTIOXIDANTS\nResveratrol 3%\nFerulic Acid 3%\nWater- ree\nPotens\nAntioxidant rormula\n1 floz\n30mb e",
+        "blockText": "ANTIOXIDANTS",
+        "blockCoordinates": {
+            "height": 110,
+            "width": 1012,
+            "left": 718,
+            "top": 838
+        }
+    },
+    {
+        "elementText": "ree",
+        "lineText": "Water- ree",
+        "resultText": "The\nOrdinary.\nANTIOXIDANTS\nResveratrol 3%\nFerulic Acid 3%\nWater- ree\nPotens\nAntioxidant rormula\n1 floz\n30mb e",
+        "blockText": "Resveratrol 3%\nFerulic Acid 3%\nWater- ree",
+        "blockCoordinates": {
+            "height": 476,
+            "width": 1186,
+            "left": 779,
+            "top": 1739
+        }
+    },
+    {
+        "elementText": "Potens",
+        "lineText": "Potens",
+        "resultText": "The\nOrdinary.\nANTIOXIDANTS\nResveratrol 3%\nFerulic Acid 3%\nWater- ree\nPotens\nAntioxidant rormula\n1 floz\n30mb e",
+        "blockText": "Potens",
+        "blockCoordinates": {
+            "height": 123,
+            "width": 395,
+            "left": 1116,
+            "top": 2235
+        }
+    },
+    {
+        "elementText": "rormula",
+        "lineText": "Antioxidant rormula",
+        "resultText": "The\nOrdinary.\nANTIOXIDANTS\nResveratrol 3%\nFerulic Acid 3%\nWater- ree\nPotens\nAntioxidant rormula\n1 floz\n30mb e",
+        "blockText": "Antioxidant rormula",
+        "blockCoordinates": {
+            "height": 118,
+            "width": 1155,
+            "left": 818,
+            "top": 2375
+        }
+    },
+    {
+        "elementText": "floz",
+        "lineText": "1 floz",
+        "resultText": "The\nOrdinary.\nANTIOXIDANTS\nResveratrol 3%\nFerulic Acid 3%\nWater- ree\nPotens\nAntioxidant rormula\n1 floz\n30mb e",
+        "blockText": "1 floz",
+        "blockCoordinates": {
+            "height": 165,
+            "width": 552,
+            "left": 1765,
+            "top": 2724
+        }
+    },
+    {
+        "elementText": "e",
+        "lineText": "30mb e",
+        "resultText": "The\nOrdinary.\nANTIOXIDANTS\nResveratrol 3%\nFerulic Acid 3%\nWater- ree\nPotens\nAntioxidant rormula\n1 floz\n30mb e",
+        "blockText": "30mb e",
+        "blockCoordinates": {
+            "height": 208,
+            "width": 721,
+            "left": 752,
+            "top": 2712
+        }
+    }
+]
+
+
+
+
 var loopinitial = [];
 
 //var dataPram = deviceTextRecognition_theOrdinary;
 
+//var dataPram = deviceTextRecognition_theOrdinary_2;
 var dataPram = deviceTextRecognition5;
 
 //from result text, we could also find brand name maybe 
@@ -451,6 +559,9 @@ console.log('BRAND ', JSON.stringify(resultted))
 
 console.log('\n\n >> PROSES RESULT TEXT '+'\n\n')
 
+//var process_resultText = deviceTextRecognition_theOrdinary_2;
+
+//var process_resultText = deviceTextRecognition_theOrdinary_2;
 
 var process_resultText = deviceTextRecognition5;
 
@@ -475,10 +586,11 @@ var arrayToProcess = result_text_process._processResultTextFunction(process_resu
 
 var productPriorityAll =[];
 
-if(resultted.length>1){
+if(arrayToProcess.length>1){
 
 
     var getproductPriority = new GetProductName_C;
+    //var getproductPriority = new GetProductName_T;
 
     //var productPriority = getproductPriority._getBrandAndProduct(arrayToProcess);
     var kkk =0;
@@ -486,7 +598,7 @@ if(resultted.length>1){
         kkk++;    
         var regexhere = new RegExp(el, 'gi')
 
-        console.log('\n\n'+kkk +':kkk>>>>>>> HERE el :',el+' \n');
+        //console.log('\n\n'+kkk +':kkk>>>>>>> HERE el :',el+' \n');
         
         var productPriority = getproductPriority._getBrandAndProduct(regexhere,'',kkk);
         //getBrandAndProduct(regexhere);
@@ -531,7 +643,7 @@ console.log('\n\nFinal string list ', JSON.stringify(arrayPriorityProduct))
 
 var mergeBrandProduct = new PriorityLooper;
 
-var FINAL_BETA = mergeBrandProduct._combineBrandAndProductName(resultted, arrayPriorityProduct)
+var FINAL_BETA = mergeBrandProduct._combineBrandAndProductName(arrayPriorityProduct, resultted)
 
 
 console.log('\n\n FINAL BETA >>', JSON.stringify(FINAL_BETA))
